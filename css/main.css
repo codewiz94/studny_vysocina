@@ -651,30 +651,31 @@ h1 {
 .section-2 dd p {
   margin: 0;
   font-size: 1rem;
+  padding: 0.5rem 0;
 }
 
-/* line 73, ../portfolio/studny_vysocina/scss/_section-2.scss */
+/* line 74, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .section-2 dd ol {
   padding-left: 0;
 }
 
-/* line 77, ../portfolio/studny_vysocina/scss/_section-2.scss */
+/* line 78, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .section-2 dd ol li,
 .section-2 dd ul li {
   font-size: 1rem;
 }
 
-/* line 82, ../portfolio/studny_vysocina/scss/_section-2.scss */
+/* line 83, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .section-2 dd ol li::marker {
   color: #FABB18;
 }
 
-/* line 86, ../portfolio/studny_vysocina/scss/_section-2.scss */
+/* line 87, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .section-2 dd h4 {
   color: #FABB18;
 }
 
-/* line 94, ../portfolio/studny_vysocina/scss/_section-2.scss */
+/* line 95, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .icon-wrap {
   display: flex;
   justify-content: center;
@@ -682,7 +683,7 @@ h1 {
 }
 
 @media (max-width: 400px) {
-  /* line 104, ../portfolio/studny_vysocina/scss/_section-2.scss */
+  /* line 105, ../portfolio/studny_vysocina/scss/_section-2.scss */
   .section-2 dd ol li,
   .section-2 dd ul li,
   .section-2 dd p {
@@ -691,7 +692,7 @@ h1 {
 }
 
 @media (max-width: 363px) {
-  /* line 112, ../portfolio/studny_vysocina/scss/_section-2.scss */
+  /* line 113, ../portfolio/studny_vysocina/scss/_section-2.scss */
   .section-2 dt h3 {
     font-size: 0.85rem;
   }
