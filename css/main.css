@@ -946,7 +946,43 @@ footer {
   border-top: 2px solid #19191a;
 }
 
-/* line 8, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 10, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-nav {
+  max-width: 100%;
+  padding: 2rem 0;
+}
+
+/* line 15, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 2rem;
+  list-style: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-align: center;
+}
+
+/* line 24, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-menu ul {
+  list-style: none;
+}
+
+/* line 26, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-menu ul li {
+  padding: 0.5rem 0;
+}
+
+/* line 30, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-menu i {
+  font-size: 2rem;
+}
+
+/* line 34, ../portfolio/studny_vysocina/scss/_footer.scss */
+.bottom-menu a {
+  color: #F5F5F5;
+}
+
+/* line 41, ../portfolio/studny_vysocina/scss/_footer.scss */
 .credits {
   width: 100%;
   text-align: center;
@@ -955,13 +991,13 @@ footer {
   background-color: #008BAA;
 }
 
-/* line 16, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 49, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz {
   margin: 0;
   color: #F5F5F5;
 }
 
-/* line 20, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 53, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz a {
   text-decoration: none;
   color: #F5F5F5;

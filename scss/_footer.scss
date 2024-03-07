@@ -5,6 +5,39 @@ footer {
     border-top: 2px solid darken($color-neutral-dk, $amount: 25%);
 }
 
+
+
+.bottom-nav {
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.bottom-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 2rem;
+    list-style: none;
+
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+
+    ul {
+        list-style: none;
+        li {
+            padding: 0.5rem 0;
+        }
+    }
+    i {
+        font-size: 2rem;
+    }
+
+    a {
+        color: $color-neutral-lt;
+    }
+}
+
+
+
 .credits {
     width: 100%;
     text-align: center;
