@@ -45,6 +45,8 @@ $(document).ready(function() {
         });
     });
 
+})(jQuery);
+
 // DRILL VISIBILITY
 
 $(document).ready(function() {
@@ -246,7 +248,7 @@ $(document).ready(function () {
 });
 
     
-})(jQuery);
+
 
 
 
