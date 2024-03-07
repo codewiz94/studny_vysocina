@@ -1,0 +1,1255 @@
+/* line 3, ../portfolio/studny_vysocina/scss/_header.scss */
+.menu-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style: none;
+  place-self: center;
+  padding: 0 1rem;
+  font-weight: 600;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  text-transform: uppercase;
+  background-color: #58585a;
+  border-bottom: 3px solid #2D333A;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+/* line 24, ../portfolio/studny_vysocina/scss/_header.scss */
+.menu-top li {
+  place-self: center;
+  padding: 0.25rem 0;
+}
+
+/* line 30, ../portfolio/studny_vysocina/scss/_header.scss */
+.menu-top li a {
+  color: #fff;
+}
+
+/* line 33, ../portfolio/studny_vysocina/scss/_header.scss */
+.menu-top li a:hover, .menu-top li a:active {
+  color: #FABB18;
+}
+
+/*
+.logo-top {
+    max-width: 30%;
+}
+*/
+/* line 50, ../portfolio/studny_vysocina/scss/_header.scss */
+.title {
+  background: #F5F5F5;
+  display: grid;
+  grid-template-rows: 10fr 3fr;
+}
+
+/* line 61, ../portfolio/studny_vysocina/scss/_header.scss */
+.logo-and-text {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  height: 40vh;
+}
+
+/*
+.logo {
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+*/
+/* line 77, ../portfolio/studny_vysocina/scss/_header.scss */
+.logo {
+  max-height: 100%;
+}
+
+/* line 81, ../portfolio/studny_vysocina/scss/_header.scss */
+.logo img {
+  position: relative;
+  overflow: hidden;
+  top: 26%;
+}
+
+/* line 87, ../portfolio/studny_vysocina/scss/_header.scss */
+.kolecko {
+  left: 25%;
+  z-index: 1;
+  width: 25%;
+  height: auto;
+  /*
+    -webkit-filter: drop-shadow(2px 2px 2px #222);
+    filter: drop-shadow(2px 2px 2px #222);
+    */
+}
+
+/* line 99, ../portfolio/studny_vysocina/scss/_header.scss */
+.rest {
+  left: -4.5%;
+  z-index: 2;
+  width: 35%;
+  height: auto;
+}
+
+/* line 108, ../portfolio/studny_vysocina/scss/_header.scss */
+.logo .kolecko {
+  animation: spin 15s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* line 123, ../portfolio/studny_vysocina/scss/_header.scss */
+.heading {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* line 127, ../portfolio/studny_vysocina/scss/_header.scss */
+.heading h1 {
+  font-weight: 700;
+  padding-top: 7rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 136, ../portfolio/studny_vysocina/scss/_header.scss */
+.heading h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #008BAB;
+}
+
+/* line 140, ../portfolio/studny_vysocina/scss/_header.scss */
+.heading h2 strong {
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 148, ../portfolio/studny_vysocina/scss/_header.scss */
+.widget-list {
+  display: flex;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* line 158, ../portfolio/studny_vysocina/scss/_header.scss */
+.widget-list-item {
+  list-style: none;
+  text-align: center;
+}
+
+/* line 162, ../portfolio/studny_vysocina/scss/_header.scss */
+.widget-list-item li {
+  color: #008BAB;
+  font-weight: 700;
+}
+
+/* line 167, ../portfolio/studny_vysocina/scss/_header.scss */
+.widget-list-item li:first-child {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 900px) {
+  /* line 177, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 3.5fr;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 185, ../portfolio/studny_vysocina/scss/_header.scss */
+  .logo-and-text {
+    grid-template-rows: 1fr 1fr;
+  }
+  /* line 189, ../portfolio/studny_vysocina/scss/_header.scss */
+  .logo {
+    grid-column: 1 / 3;
+  }
+  /* line 193, ../portfolio/studny_vysocina/scss/_header.scss */
+  .heading {
+    grid-column: 1 / 3;
+  }
+  /* line 197, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 1.5fr;
+  }
+  /* line 201, ../portfolio/studny_vysocina/scss/_header.scss */
+  .rest {
+    left: 8.5%;
+  }
+  /* line 205, ../portfolio/studny_vysocina/scss/_header.scss */
+  .kolecko {
+    left: 38%;
+  }
+}
+
+@media (max-width: 566px) {
+  /* line 211, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 1.7fr;
+  }
+}
+
+@media (max-width: 475px) {
+  /* line 217, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 1.7fr;
+  }
+}
+
+@media (max-width: 462px) {
+  /* line 223, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 1.5fr;
+  }
+}
+
+@media (max-width: 374px) {
+  /* line 229, ../portfolio/studny_vysocina/scss/_header.scss */
+  .title {
+    grid-template-rows: 10fr 2fr;
+  }
+}
+
+/* line 3, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.paralax {
+  height: 40vw;
+  background: whitesmoke;
+  background: linear-gradient(180deg, whitesmoke 0%, #00c3ff 50%, whitesmoke 100%);
+}
+
+/* line 10, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.paralax {
+  position: relative;
+}
+
+/* line 14, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.parallax-image {
+  /* Add styles for your images here */
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.3s ease-out;
+  /* Add a smooth transition effect */
+}
+
+/* line 23, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.clouds {
+  position: absolute;
+  bottom: 12%;
+  z-index: 5;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+/* line 31, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.land {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* line 38, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.cloud1 {
+  position: absolute;
+  width: 10%;
+  z-index: 15;
+  top: 15%;
+  left: 10%;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+/* line 48, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.cloud2 {
+  position: absolute;
+  width: 10%;
+  z-index: 15;
+  left: 30%;
+  top: 10%;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+/* line 58, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.cloud3 {
+  position: absolute;
+  width: 10%;
+  z-index: 15;
+  right: 30%;
+  top: 10%;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+/* line 68, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.cloud4 {
+  position: absolute;
+  width: 10%;
+  z-index: 15;
+  top: 15%;
+  right: 10%;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+/* line 78, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.car {
+  position: absolute;
+  width: 50%;
+  z-index: 20;
+  bottom: -8%;
+  left: 25%;
+}
+
+/* line 86, ../portfolio/studny_vysocina/scss/_paralax.scss */
+.grass-transition {
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  z-index: 600;
+  bottom: -1%;
+  background: url(../img/country/grass.png);
+  background-size: contain;
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+@media (max-width: 1100px) {
+  /* line 102, ../portfolio/studny_vysocina/scss/_paralax.scss */
+  .grass-transition {
+    height: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 108, ../portfolio/studny_vysocina/scss/_paralax.scss */
+  .grass-transition {
+    height: 1.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 114, ../portfolio/studny_vysocina/scss/_paralax.scss */
+  .grass-transition {
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 120, ../portfolio/studny_vysocina/scss/_paralax.scss */
+  .grass-transition {
+    height: 1.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* line 126, ../portfolio/studny_vysocina/scss/_paralax.scss */
+  .grass-transition {
+    height: 1rem;
+  }
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.content-wrap-1 {
+  background: url(../img/bg/soil.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 6, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 {
+  text-align: center;
+}
+
+/* line 9, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 .wrapper-1 {
+  margin: 4rem 0;
+  background: rgba(88, 88, 90, 0.5);
+  padding: 0 0.5rem;
+}
+
+/* line 15, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 h2 {
+  padding-top: 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 22, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 p {
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #F5F5F5;
+  padding-bottom: 3rem;
+}
+
+/* line 29, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 p strong {
+  color: #FABB18;
+}
+
+/* line 34, ../portfolio/studny_vysocina/scss/_section-1.scss */
+.section-1 p:last-child {
+  margin-top: 0;
+}
+
+/* line 3, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.content-wrap-2 {
+  background: url(../img/bg/sand.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 8, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 {
+  padding-right: 1rem;
+}
+
+/* line 12, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 .wrapper-2 {
+  margin: 4rem 0;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0 0.5rem;
+}
+
+/* line 18, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 h2 {
+  padding-top: 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* line 26, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dl {
+  padding-bottom: 0.5rem;
+}
+
+/* line 30, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dt {
+  background-color: #FABB18;
+  font-size: clamp(1rem, 3vw, 2rem);
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  border: 2px solid #58585a;
+}
+
+/* line 37, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dt:hover, .section-2 dt:active {
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+/* line 45, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd {
+  margin: 0;
+  padding: 1rem 2rem;
+  line-height: 2.5;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-left: 2px solid #FABB18;
+  border-right: 2px solid #FABB18;
+  border-bottom: 2px solid #FABB18;
+  color: #F5F5F5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 61, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd ul {
+  list-style: none;
+}
+
+/* line 63, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd ul span {
+  color: #FABB18;
+}
+
+/* line 68, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* line 73, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd ol {
+  padding-left: 0;
+}
+
+/* line 77, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd ol li,
+.section-2 dd ul li {
+  font-size: 1rem;
+}
+
+/* line 82, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd ol li::marker {
+  color: #FABB18;
+}
+
+/* line 86, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.section-2 dd h4 {
+  color: #FABB18;
+}
+
+/* line 94, ../portfolio/studny_vysocina/scss/_section-2.scss */
+.icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 400px) {
+  /* line 104, ../portfolio/studny_vysocina/scss/_section-2.scss */
+  .section-2 dd ol li,
+  .section-2 dd ul li,
+  .section-2 dd p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 363px) {
+  /* line 112, ../portfolio/studny_vysocina/scss/_section-2.scss */
+  .section-2 dt h3 {
+    font-size: 0.85rem;
+  }
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.content-wrap-3 {
+  background: url(../img/bg/gravel.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 6, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 {
+  padding-right: 1rem;
+}
+
+/* line 9, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 .wrapper-3 {
+  margin: 4rem 0;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0 0.5rem;
+  padding-bottom: 2rem;
+}
+
+/* line 16, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 h2 {
+  padding-top: 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* line 24, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  color: #F5F5F5;
+  margin: 3rem 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 33, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1rem;
+}
+
+/* line 38, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.galery img {
+  border-radius: 15px;
+  width: 95%;
+  border: 3px solid #F5F5F5;
+}
+
+/* line 43, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.galery img:hover, .galery img:active {
+  transform: scale(1.05);
+  border-color: #FABB18;
+}
+
+/* line 53, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 60, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.slide {
+  display: flex;
+  width: 1200%;
+  /* Set the width to 1200% to accommodate all images in one row */
+  transition: transform 0.5s ease-in-out;
+}
+
+/* line 66, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.slide img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #F5F5F5;
+  border-radius: 10px;
+}
+
+/* line 73, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 81, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.buttons a {
+  padding: 0.5rem;
+  background-color: #F5F5F5;
+  color: #58585a;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  cursor: pointer;
+}
+
+/* line 92, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.prev {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* line 97, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.next {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  /* line 105, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .galery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 111, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .section-3 .galery {
+    display: none;
+  }
+}
+
+@media (min-width: 450px) {
+  /* line 117, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .section-3 .slider {
+    display: none;
+  }
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.content-wrap-4 {
+  background: url(../img/bg/stone.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 6, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 {
+  padding-right: 1rem;
+}
+
+/* line 10, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .wrapper-4 {
+  margin: 4rem 0;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0 0.5rem;
+  padding-bottom: 2rem;
+}
+
+/* line 17, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 h2 {
+  padding-top: 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* line 25, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  color: #FABB18;
+  margin: 3rem 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 33, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .card-wrap1,
+.section-4 .card-wrap2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+/* line 40, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column {
+  text-align: center;
+  background-color: #F5F5F5;
+  color: #58585a;
+  border-radius: 15px;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr 0.25fr;
+  box-shadow: rgba(245, 245, 245, 0.4) 0px 30px 90px;
+  border: 2px solid #b5b5b5;
+}
+
+/* line 53, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column h5 {
+  margin: 1rem 0;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  padding: 0 0.5rem;
+}
+
+/* line 60, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column h6 {
+  margin: 1rem 0;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  border-top: 2px solid #008BAB;
+  padding-top: 0.5rem;
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 70, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column ul {
+  list-style-type: '- ';
+  padding-left: 1.5rem;
+}
+
+/* line 77, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column ul li {
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  padding-right: 0.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* line 87, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column a {
+  text-decoration: none;
+  color: #F5F5F5;
+  justify-self: center;
+  align-self: end;
+  padding: 1rem 2rem;
+  background-color: #008BAB;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 2px solid #008BAB;
+}
+
+/* line 99, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.section-4 .column a:hover, .section-4 .column a:active {
+  background-color: #00c9f8;
+}
+
+/* line 109, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.column:hover,
+.column:active {
+  background-color: #FABB18;
+}
+
+/* line 113, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.column:hover h5, .column:hover h6, .column:hover ul,
+.column:active h5,
+.column:active h6,
+.column:active ul {
+  color: #F5F5F5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 118, ../portfolio/studny_vysocina/scss/_section-4.scss */
+.column:hover h6,
+.column:active h6 {
+  border-color: #F5F5F5;
+}
+
+@media (max-width: 1140px) {
+  /* line 125, ../portfolio/studny_vysocina/scss/_section-4.scss */
+  .wrapper-4 .card-wrap1,
+  .wrapper-4 .card-wrap2 {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  /* line 131, ../portfolio/studny_vysocina/scss/_section-4.scss */
+  .wrapper-4 .card-wrap1 .column,
+  .wrapper-4 .card-wrap2 .column {
+    width: 70%;
+    place-self: center stretch;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  /* line 141, ../portfolio/studny_vysocina/scss/_section-4.scss */
+  .wrapper-4 .card-wrap1,
+  .wrapper-4 .card-wrap2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  /* line 150, ../portfolio/studny_vysocina/scss/_section-4.scss */
+  .wrapper-4 .card-wrap1 .column,
+  .wrapper-4 .card-wrap2 .column {
+    width: 100%;
+  }
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.content-wrap-5 {
+  background: url(../img/bg/water.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 6, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 {
+  padding-right: 1rem;
+}
+
+/* line 9, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .wrapper-5 {
+  margin: 4rem 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 0.5rem;
+  padding-bottom: 2rem;
+}
+
+/* line 16, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 h2 {
+  padding-top: 3rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #FABB18;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* line 25, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
+  color: #F5F5F5;
+  margin: 3rem 0;
+}
+
+/* line 33, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 h4 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  color: #FABB18;
+  margin: 3rem 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 41, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+/* line 47, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .contact-wrap ul {
+  list-style: none;
+  text-align: center;
+  font-size: clamp(1.15rem, 3vw, 2rem);
+  color: #F5F5F5;
+}
+
+/* line 53, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .contact-wrap ul li {
+  margin: 1.25rem 0;
+}
+
+/* line 57, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .contact-wrap ul i {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+/* line 62, ../portfolio/studny_vysocina/scss/_section-5.scss */
+.section-5 .contact-wrap ul li a {
+  text-decoration: none;
+  color: #F5F5F5;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 778px) {
+  /* line 71, ../portfolio/studny_vysocina/scss/_section-5.scss */
+  .section-5 .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+  /* line 75, ../portfolio/studny_vysocina/scss/_section-5.scss */
+  .contact-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+  }
+}
+
+/* line 2, ../portfolio/studny_vysocina/scss/_footer.scss */
+footer {
+  background-color: #58585a;
+  color: #F5F5F5;
+  border-top: 2px solid #19191a;
+}
+
+/* line 8, ../portfolio/studny_vysocina/scss/_footer.scss */
+.credits {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #008BAA;
+}
+
+/* line 16, ../portfolio/studny_vysocina/scss/_footer.scss */
+.wiz {
+  margin: 0;
+  color: #F5F5F5;
+}
+
+/* line 20, ../portfolio/studny_vysocina/scss/_footer.scss */
+.wiz a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main {
+  height: 50vh;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  /* Add a transition effect for smooth visibility changes */
+}
+
+/* line 8, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main img {
+  width: 50%;
+  display: block;
+}
+
+/* line 13, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main .drill-top {
+  -webkit-filter: drop-shadow(1px 1px 1px #fff);
+  filter: drop-shadow(1px 1px 3px #fff);
+}
+
+/* line 18, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main .drill-mid {
+  -webkit-filter: drop-shadow(1px 1px 1px #fff);
+  filter: drop-shadow(1px 5px 3px #fff);
+}
+
+/* line 23, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main .drill-bot {
+  -webkit-filter: drop-shadow(1px 1px 1px #fff);
+  filter: drop-shadow(1px 1px 3px #fff);
+}
+
+/* line 29, ../portfolio/studny_vysocina/scss/_drill.scss */
+.drill-main.visible {
+  opacity: 1;
+}
+
+/* line 1, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 14, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  border: 2px solid #FABB18;
+  border-radius: 15px;
+}
+
+/* line 21, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.lightbox-btn {
+  position: absolute;
+  font-weight: 700;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: #FABB18;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* line 35, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.lightbox-btn.prev {
+  left: 30%;
+}
+
+/* line 39, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.lightbox-btn.next {
+  right: 30%;
+}
+
+/* line 43, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+.close-btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 1rem;
+  color: #FABB18;
+  font-weight: 700;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 1450px) {
+  /* line 58, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 20%;
+  }
+  /* line 62, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 20%;
+  }
+}
+
+@media (max-width: 970px) {
+  /* line 68, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 15%;
+  }
+  /* line 72, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 15%;
+  }
+}
+
+@media (max-width: 830px) {
+  /* line 78, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 10%;
+  }
+  /* line 82, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 10%;
+  }
+}
+
+@media (max-width: 730px) {
+  /* line 88, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 5%;
+  }
+  /* line 92, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  /* line 98, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 2%;
+  }
+  /* line 102, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 2%;
+  }
+}
+
+@media (max-width: 550px) {
+  /* line 108, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.prev {
+    left: 0.05%;
+  }
+  /* line 112, ../portfolio/studny_vysocina/scss/_lightbox.scss */
+  .lightbox-btn.next {
+    right: 0.05%;
+  }
+}
+
+/* line 16, ../portfolio/studny_vysocina/scss/main.scss */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* line 21, ../portfolio/studny_vysocina/scss/main.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 25, ../portfolio/studny_vysocina/scss/main.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 31, ../portfolio/studny_vysocina/scss/main.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 37, ../portfolio/studny_vysocina/scss/main.scss */
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* line 42, ../portfolio/studny_vysocina/scss/main.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 46, ../portfolio/studny_vysocina/scss/main.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* line 62, ../portfolio/studny_vysocina/scss/main.scss */
+body {
+  background-color: aqua;
+}
+
+/* line 66, ../portfolio/studny_vysocina/scss/main.scss */
+main {
+  width: 100%;
+  position: relative;
+  z-index: 500;
+}
+
+/* line 72, ../portfolio/studny_vysocina/scss/main.scss */
+.paralax {
+  max-width: 100%;
+}
+
+/* line 76, ../portfolio/studny_vysocina/scss/main.scss */
+aside {
+  /*
+    background-color: red;
+    */
+  padding-left: 0.5rem;
+}
+
+/* line 83, ../portfolio/studny_vysocina/scss/main.scss */
+.meter-1,
+.meter-2,
+.meter-3,
+.meter-4 {
+  width: 100%;
+  background-color: #C44129;
+  color: #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  border-bottom: 2px solid #F5F5F5;
+  font-size: 1rem;
+}
+
+/* line 96, ../portfolio/studny_vysocina/scss/main.scss */
+.meter-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  text-transform: uppercase;
+  padding-left: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 430px) {
+  /* line 112, ../portfolio/studny_vysocina/scss/main.scss */
+  .meter-wrap {
+    font-size: 0.75rem;
+  }
+}
+
+/* line 121, ../portfolio/studny_vysocina/scss/main.scss */
+.content-wrap-1,
+.content-wrap-2,
+.content-wrap-3,
+.content-wrap-4,
+.content-wrap-5 {
+  max-width: 100%;
+}
+
+/* line 129, ../portfolio/studny_vysocina/scss/main.scss */
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2.5rem 10fr;
+}
+
+/* line 140, ../portfolio/studny_vysocina/scss/main.scss */
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+  padding-left: 0.25rem;
+  padding-right: 1rem;
+}
+
+/* line 152, ../portfolio/studny_vysocina/scss/main.scss */
+html {
+  font-family: "Kanit", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */

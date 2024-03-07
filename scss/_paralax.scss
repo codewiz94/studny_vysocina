@@ -1,0 +1,130 @@
+
+
+.paralax {
+    height: 40vw;
+    background: rgb(245,245,245);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(0,195,255,1) 50%, rgba(245,245,245,1) 100%); 
+    
+}
+
+.paralax {
+    position: relative;
+}
+
+.parallax-image {
+    /* Add styles for your images here */
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+}
+
+.clouds {
+    position: absolute;
+    bottom: 12%;
+    z-index: 5;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.land {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    
+}
+
+.cloud1 {
+    position: absolute;
+    width: 10%;
+    z-index: 15;
+    top: 15%;
+    left: 10%;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.cloud2 {
+    position: absolute;
+    width: 10%;
+    z-index: 15;
+    left: 30%;
+    top: 10%;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.cloud3 {
+    position: absolute;
+    width: 10%;
+    z-index: 15;
+    right: 30%;
+    top: 10%;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.cloud4 {
+    position: absolute;
+    width: 10%;
+    z-index: 15;
+    top: 15%;
+    right: 10%;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+}
+
+.car {
+    position: absolute;
+    width: 50%;
+    z-index: 20;
+    bottom: -8%;
+    left: 25%;
+}
+
+.grass-transition {
+    height: 3rem;
+    width: 100%;
+    position: absolute;
+    z-index: 600;
+    bottom: -1%;
+    background: url(../img/country/grass.png);
+    background-size: contain;
+    -webkit-filter: drop-shadow(1px 1px 1px #222);
+    filter: drop-shadow(1px 1px 1px #222);
+
+}
+
+
+
+@media (max-width: 1100px) {
+    .grass-transition {
+        height: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .grass-transition {
+        height: 1.75rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .grass-transition {
+        height: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .grass-transition {
+        height: 1.25rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .grass-transition {
+        height: 1rem;
+    }
+}
+

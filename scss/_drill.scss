@@ -1,0 +1,31 @@
+.drill-main {
+    height: 50vh;
+    position: fixed;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Add a transition effect for smooth visibility changes */
+
+    img {
+        width: 50%;
+        display: block;
+    }
+
+    .drill-top {
+        -webkit-filter: drop-shadow(1px 1px 1px #fff);
+        filter: drop-shadow(1px 1px 3px #fff);
+    }
+
+    .drill-mid {
+        -webkit-filter: drop-shadow(1px 1px 1px #fff);
+        filter: drop-shadow(1px 5px 3px #fff);
+    }
+
+    .drill-bot {
+        -webkit-filter: drop-shadow(1px 1px 1px #fff);
+        filter: drop-shadow(1px 1px 3px #fff);
+    }
+}
+
+.drill-main.visible {
+    opacity: 1;
+}

@@ -1,0 +1,115 @@
+
+
+.content-wrap-2 {
+    background: url(../img/bg/sand.jpg) no-repeat;
+    background-size: cover;
+}
+
+.section-2 {
+
+    padding-right: 1rem;
+
+    .wrapper-2 {
+        margin: 4rem 0;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 0 0.5rem;
+    }
+    
+    h2 {
+        padding-top: 3rem;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        color: $color-highlight;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    dl {
+        padding-bottom: 0.5rem;
+    }
+
+    dt {
+        background-color: $color-highlight;
+        font-size: clamp(1rem, 3vw, 2rem);
+        display: grid;
+        grid-template-columns: 1fr 9fr 1fr;
+        border: 2px solid $color-neutral-dk;
+        
+        &:hover,
+        &:active {
+            background-color: $color-neutral-lt;
+            cursor: pointer;
+        }
+
+    }
+    
+    dd {
+        margin: 0;
+        padding: 1rem 2rem;
+        
+        
+        line-height: 2.5;
+       
+        font-weight: 600;
+        letter-spacing: 2px;
+        border-left: 2px solid $color-highlight;
+        border-right: 2px solid $color-highlight;
+        border-bottom: 2px solid $color-highlight;
+        
+        color: $color-neutral-lt;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+        
+        ul {
+            list-style: none;
+            span {
+                color: $color-highlight;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        ol {
+            padding-left: 0;
+        }
+        
+        ol li,
+        ul li {
+            font-size: 1rem; 
+        }
+
+        ol li::marker {
+            color: $color-highlight;
+        }
+        
+        h4 {
+            color: $color-highlight;
+        }
+
+    }
+    
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+
+    
+
+  .section-2 dd ol li,
+  .section-2 dd ul li,
+  .section-2 dd p {
+        font-size: 0.85rem; 
+    }
+}
+
+@media (max-width: 363px) {
+    .section-2 dt h3 {
+        font-size: 0.85rem; 
+    }
+}

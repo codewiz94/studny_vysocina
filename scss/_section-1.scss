@@ -1,0 +1,37 @@
+.content-wrap-1 {
+    background: url(../img/bg/soil.jpg) no-repeat;
+    background-size: cover;
+}
+
+.section-1 {
+    text-align: center;
+
+    .wrapper-1 {
+        margin: 4rem 0;
+        background: rgba(88, 88, 90, 0.5);
+        padding: 0 0.5rem;
+    }
+    
+    h2 {
+        padding-top: 3rem;
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        color: $color-highlight;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+        font-size: 1.25rem;
+        line-height: 2;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: $color-neutral-lt;
+        padding-bottom: 3rem;
+        strong {
+            color: $color-highlight;
+        }
+    }
+
+    p:last-child {
+        margin-top: 0;
+    }
+}

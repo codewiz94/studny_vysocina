@@ -1,0 +1,158 @@
+@import 'variables.scss';
+@import 'header.scss';
+@import 'paralax.scss';
+@import 'section-1.scss';
+@import 'section-2.scss';
+@import 'section-3.scss';
+@import 'section-4.scss';
+@import 'section-5.scss';
+@import 'footer.scss';
+@import 'drill.scss';
+@import'lightbox.scss';
+
+
+// DOCUMENT SETTINGS
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+ 
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+// GENERAL SETTINGS
+
+// TBDel colors
+
+
+
+body {
+    background-color: aqua;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    z-index: 500;
+}
+
+.paralax {
+    max-width: 100%;
+}
+
+aside {
+    /*
+    background-color: red;
+    */
+    padding-left: 0.5rem;
+}
+
+.meter-1,
+.meter-2,
+.meter-3,
+.meter-4 {
+    width: 100%;
+    background-color: #C44129;
+    color: $color-neutral-lt;
+    //color: $color-highlight;
+    border-top: 2px solid $color-neutral-lt;
+    border-bottom: 2px solid $color-neutral-lt;
+    font-size: 1rem;
+}
+
+.meter-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    text-transform: uppercase;
+    padding-left: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    //text-shadow: 4px 4px 21px rgba(250,187,24,1);
+}
+
+
+
+@media (max-width: 430px) {
+    .meter-wrap {
+        font-size: 0.75rem;
+    }
+}
+
+
+
+// DISPLAY SETTINGS
+
+.content-wrap-1,
+.content-wrap-2,
+.content-wrap-3,
+.content-wrap-4,
+.content-wrap-5 {
+    max-width: 100%;
+}
+
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2.5rem 10fr;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5 {
+    padding-left: 0.25rem;
+    padding-right: 1rem;
+}
+
+
+// TYPOGRAPHY
+
+html {
+    font-family: "Kanit", sans-serif;
+}
+
+
+//
+

@@ -1,0 +1,26 @@
+
+footer {
+    background-color: $color-neutral-dk;
+    color: $color-neutral-lt;
+    border-top: 2px solid darken($color-neutral-dk, $amount: 25%);
+}
+
+.credits {
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #008BAA;
+}
+
+.wiz {
+    margin: 0;
+    color: $color-neutral-lt;
+
+    a {
+        text-decoration: none;
+        color: $color-neutral-lt;
+    }
+}
+
+
