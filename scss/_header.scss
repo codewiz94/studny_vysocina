@@ -76,6 +76,7 @@
 
 .logo {
     max-height: 100%;
+    position: relative;
 }
 
 .logo img {
@@ -95,6 +96,20 @@
     filter: drop-shadow(2px 2px 2px #222);
     */
 }
+
+.logo-text {
+    position: absolute;
+    left: 12%;
+    top: 90%;
+    overflow: hidden;
+
+    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-weight: 700;
+    color: $color-highlight2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+
 
 .rest {
     
