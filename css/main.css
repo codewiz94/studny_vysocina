@@ -956,33 +956,34 @@ footer {
 .bottom-menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
   padding: 0 2rem;
   list-style: none;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   text-align: center;
 }
 
-/* line 24, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 25, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu ul {
   list-style: none;
 }
 
-/* line 26, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 27, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu ul li {
   padding: 0.5rem 0;
 }
 
-/* line 30, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 31, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu i {
   font-size: 2rem;
 }
 
-/* line 34, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 35, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu a {
   color: #F5F5F5;
 }
 
-/* line 41, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 42, ../portfolio/studny_vysocina/scss/_footer.scss */
 .credits {
   width: 100%;
   text-align: center;
@@ -991,16 +992,32 @@ footer {
   background-color: #008BAA;
 }
 
-/* line 49, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 50, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz {
   margin: 0;
   color: #F5F5F5;
 }
 
-/* line 53, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 54, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz a {
   text-decoration: none;
   color: #F5F5F5;
+}
+
+@media (max-width: 900px) {
+  /* line 64, ../portfolio/studny_vysocina/scss/_footer.scss */
+  .bottom-menu {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* line 71, ../portfolio/studny_vysocina/scss/_footer.scss */
+  .bottom-menu {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
 }
 
 /* line 1, ../portfolio/studny_vysocina/scss/_drill.scss */
