@@ -60,8 +60,8 @@
 
 .logo-and-text {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 40vh;
+    grid-template-columns: 1fr 1.2fr;
+    height: 80vh;
 }
 /*
 .logo {
@@ -78,7 +78,8 @@
     max-height: 100%;
     position: relative;
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    
 }
 
 .logo img {
@@ -87,10 +88,10 @@
 }
 
 .kolecko {
-    
-    left: 25%;
+    top: 15%;
+    left: 31%;
     z-index: 1;
-    width: 25%;
+    width: 35%;
     height: auto;
     /*
     -webkit-filter: drop-shadow(2px 2px 2px #222);
@@ -99,24 +100,22 @@
 }
 
 .logo-text {
-    position: absolute;
-    left: 12%;
-    top: 90%;
-    overflow: hidden;
+
 
     font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 700;
     color: $color-highlight2;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
 
 
 
 .rest {
-    
-    left: -4.5%;
+    top: 17%;
+    left: -11%;
     z-index: 2;
-    width: 35%;
+    width: 50%;
     height: auto;
 }
 
@@ -139,7 +138,7 @@
 .heading {
     text-align: center;
     padding: 0 1rem;
-    
+    /*
     h1 {
         font-weight: 700;
         padding-top: 7rem;
@@ -148,9 +147,15 @@
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
         
     }
-    
+    */
+    h2:first-of-type {
+        padding-top: 8rem;
+        text-align: center;
+    }
+
     h2 {
-        font-size: clamp(1.5rem, 3vw, 2rem);
+        padding-right: 4rem;
+        font-size: clamp(1.8rem, 3vw, 3rem);
         color: $color-highlight2;
         
         strong {
