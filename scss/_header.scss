@@ -89,7 +89,7 @@
 
 .kolecko {
     top: 15%;
-    left: 31%;
+    left: 30.6%;
     z-index: 1;
     width: 35%;
     height: auto;
@@ -102,7 +102,7 @@
 h1 {
 
     padding: 0 1rem;
-    font-size: clamp(2rem, 4vw, 4rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 700;
     color: $color-highlight2;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -133,6 +133,7 @@ h1 {
     }
   }
 
+
 // HEADING 
 
 .heading {
@@ -155,7 +156,7 @@ h1 {
 
     h2 {
         padding-right: 4rem;
-        font-size: clamp(1.8rem, 3vw, 3rem);
+        font-size: clamp(1.8rem, 2vw, 3rem);
         color: $color-highlight2;
         
         strong {
@@ -193,7 +194,158 @@ h1 {
 
 }
 
+// MEDIA QUERIES
 
+@media (max-width: 1500px) {
+    .logo {
+        grid-template-rows: 1.5fr 1fr;
+    }
+    
+}
+
+@media (max-width: 1400px) {
+    .logo {
+        grid-template-rows: 1.2fr 1fr;
+    }
+    
+}
+
+@media (max-width: 1360px) {
+    .logo-and-text {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .logo {
+        grid-template-rows: 5fr 1fr;
+    }
+
+    .widget {
+        margin-top: -1rem;
+    }
+
+    .kolecko {
+        top: 17%;
+        left: 41.7%;
+        width: 15%;
+
+    }
+
+    .rest {
+        top: 19%;
+        left: 24.5%;
+        width: 20%;
+
+    }
+
+    .heading h2 {
+        padding-right: 0;
+    }
+
+    .heading h2:first-of-type {
+        padding-top: 3rem;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    .kolecko {
+
+        left: 37.6%;
+        width: 23%;
+
+    }
+
+    .rest {
+
+        left: 11.5%;
+        width: 30%;
+
+    }
+
+    .logo-and-text {
+        grid-template-rows: 1.7fr 1fr;
+    }
+
+    .heading h2:first-of-type {
+        padding-top: 2rem;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .logo-and-text {
+        grid-template-rows: 1.1fr 1fr;
+    }
+
+    .widget {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo-and-text {
+        grid-template-rows: 0.8fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .kolecko {
+
+        left: 29.6%;
+        width: 40%;
+
+    }
+
+    .rest {
+        left: -14.5%;
+        width: 50%;
+    }
+
+    .logo-and-text {
+        grid-template-rows: 1.2fr 1fr;
+    }
+
+    .logo {
+        grid-template-rows: 7fr 1fr;
+    }
+
+    .widget {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        grid-template-rows: 2.2fr 1fr;
+    }
+
+    .heading h2:first-of-type {
+        padding-top: 0rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo {
+        grid-template-rows: 1.7fr 1fr;
+    }
+
+    .logo-and-text {
+        grid-template-rows: 0.9fr 1fr;
+    }
+
+    .widget {
+        margin-top: 0rem;
+    }
+}
+
+/*
 @media (max-width: 900px) {
     .title {
         grid-template-rows: 10fr 3.5fr;
@@ -252,3 +404,4 @@ h1 {
     }
 }
 
+*/
