@@ -691,13 +691,6 @@ h1 {
   }
 }
 
-@media (max-width: 363px) {
-  /* line 113, ../portfolio/studny_vysocina/scss/_section-2.scss */
-  .section-2 dt h3 {
-    font-size: 0.85rem;
-  }
-}
-
 /* line 1, ../portfolio/studny_vysocina/scss/_section-3.scss */
 .content-wrap-3 {
   background: url(../img/bg/gravel.jpg) no-repeat;
