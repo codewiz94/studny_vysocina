@@ -489,7 +489,7 @@ h1 {
   position: absolute;
   z-index: 600;
   bottom: -1%;
-  background: url(../img/country/grass.png);
+  background: url(../img/country/grass.webp);
   background-size: contain;
   -webkit-filter: drop-shadow(1px 1px 1px #222);
   filter: drop-shadow(1px 1px 1px #222);
@@ -532,7 +532,7 @@ h1 {
 
 /* line 1, ../portfolio/studny_vysocina/scss/_section-1.scss */
 .content-wrap-1 {
-  background: url(../img/bg/soil.jpg) no-repeat;
+  background: url(../img/bg/soil.webp) no-repeat;
   background-size: cover;
 }
 
@@ -578,7 +578,7 @@ h1 {
 
 /* line 3, ../portfolio/studny_vysocina/scss/_section-2.scss */
 .content-wrap-2 {
-  background: url(../img/bg/sand.jpg) no-repeat;
+  background: url(../img/bg/sand.webp) no-repeat;
   background-size: cover;
 }
 
@@ -693,7 +693,7 @@ h1 {
 
 /* line 1, ../portfolio/studny_vysocina/scss/_section-3.scss */
 .content-wrap-3 {
-  background: url(../img/bg/gravel.jpg) no-repeat;
+  background: url(../img/bg/gravel.webp) no-repeat;
   background-size: cover;
 }
 
@@ -826,7 +826,7 @@ h1 {
 
 /* line 1, ../portfolio/studny_vysocina/scss/_section-4.scss */
 .content-wrap-4 {
-  background: url(../img/bg/stone.jpg) no-repeat;
+  background: url(../img/bg/stone.webp) no-repeat;
   background-size: cover;
 }
 
@@ -1006,7 +1006,7 @@ h1 {
 */
 /* line 1, ../portfolio/studny_vysocina/scss/_section-5.scss */
 .content-wrap-5 {
-  background: url(../img/bg/water.jpg) no-repeat;
+  background: url(../img/bg/water.webp) no-repeat;
   background-size: cover;
 }
 
