@@ -118,8 +118,22 @@ $(document).ready(function() {
             var currentDt = $(this);
             var currentDd = currentDt.next('dd');
     
+            // Close all 'dd' elements except the current one
+            list.find('dd').not(currentDd).slideUp();
+            list.find('dt').not(currentDt).find('.fa-circle-minus').removeClass('fa-circle-minus').addClass('fa-circle-plus');
+    
             // Toggle the visibility of the current 'dd'
-            currentDd.slideToggle().siblings('dd').slideUp();
+            currentDd.slideToggle(function() {
+                // Get the height of ul.menu-top
+                var menuTopHeight = $('ul.menu-top').outerHeight();
+    
+                // Scroll to just beneath ul.menu-top with offset if 'dd' is opening
+                if (currentDd.is(':visible')) {
+                    $('html, body').animate({
+                        scrollTop: currentDt.offset().top - menuTopHeight
+                    }, 50);
+                }
+            });
     
             // Toggle the icons based on visibility
             var icon = currentDt.find('.fa-circle-plus, .fa-circle-minus');
@@ -131,6 +145,11 @@ $(document).ready(function() {
             event.preventDefault();
         });
     });
+    
+    
+    
+    
+    
     
     
     
