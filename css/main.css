@@ -1109,6 +1109,11 @@ footer {
 }
 
 /* line 15, ../portfolio/studny_vysocina/scss/_footer.scss */
+.logo-white {
+  max-width: 30%;
+}
+
+/* line 19, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1119,27 +1124,27 @@ footer {
   text-align: center;
 }
 
-/* line 25, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 29, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu ul {
   list-style: none;
 }
 
-/* line 27, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 31, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu ul li {
   padding: 0.5rem 0;
 }
 
-/* line 31, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 35, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu i {
   font-size: 2rem;
 }
 
-/* line 35, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 39, ../portfolio/studny_vysocina/scss/_footer.scss */
 .bottom-menu a {
   color: #F5F5F5;
 }
 
-/* line 42, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 46, ../portfolio/studny_vysocina/scss/_footer.scss */
 .credits {
   width: 100%;
   text-align: center;
@@ -1148,20 +1153,20 @@ footer {
   background-color: #008BAA;
 }
 
-/* line 50, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 54, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz {
   margin: 0;
   color: #F5F5F5;
 }
 
-/* line 54, ../portfolio/studny_vysocina/scss/_footer.scss */
+/* line 58, ../portfolio/studny_vysocina/scss/_footer.scss */
 .wiz a {
   text-decoration: none;
   color: #F5F5F5;
 }
 
 @media (max-width: 900px) {
-  /* line 64, ../portfolio/studny_vysocina/scss/_footer.scss */
+  /* line 68, ../portfolio/studny_vysocina/scss/_footer.scss */
   .bottom-menu {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
@@ -1169,7 +1174,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-  /* line 71, ../portfolio/studny_vysocina/scss/_footer.scss */
+  /* line 75, ../portfolio/studny_vysocina/scss/_footer.scss */
   .bottom-menu {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
