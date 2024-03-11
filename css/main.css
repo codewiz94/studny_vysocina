@@ -752,7 +752,7 @@ h1 {
 .slider {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* line 60, ../portfolio/studny_vysocina/scss/_section-3.scss */
