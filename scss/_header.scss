@@ -251,8 +251,8 @@ h1 {
 
 @media (max-width: 1050px) {
 
-    .nav-top .menu-top li a i {
-        display: block;
+    .nav-top .menu-top li a {
+        display: grid;
     }
 
     .kolecko {

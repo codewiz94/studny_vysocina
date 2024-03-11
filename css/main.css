@@ -236,8 +236,8 @@ h1 {
 
 @media (max-width: 1050px) {
   /* line 254, ../portfolio/studny_vysocina/scss/_header.scss */
-  .nav-top .menu-top li a i {
-    display: block;
+  .nav-top .menu-top li a {
+    display: grid;
   }
   /* line 258, ../portfolio/studny_vysocina/scss/_header.scss */
   .kolecko {
