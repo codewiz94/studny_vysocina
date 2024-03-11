@@ -273,3 +273,68 @@ $(document).ready(function () {
 
 
 
+
+$(document).ready(function() {
+    // Select all meter divs and their corresponding messages
+    var meters = $('.meter');
+    var messages = $('.message');
+    var drillImages = $('.drill-top, .drill-mid, .drill-bot');
+
+    // Initially hide all messages
+    messages.hide();
+
+    $(window).scroll(function() {
+        // Iterate over each meter and message pair
+        meters.each(function(index) {
+            var currentMeter = $(this);
+            var currentMessage = $('.message-' + (index + 1));
+
+            // Check if any part of the drill images is visible in the current meter
+            if (areElementsVisible(drillImages, currentMeter)) {
+                // Show the corresponding message
+                currentMessage.slideDown();
+            } else {
+                // Hide the corresponding message if the conditions are not met
+                currentMessage.slideUp();
+            }
+        });
+    });
+
+    // Function to check if any part of the elements is visible in the container
+    function areElementsVisible(elements, container) {
+        var containerTop = container.offset().top;
+        var containerBottom = containerTop + container.height();
+        var isVisible = false;
+
+        elements.each(function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).height();
+
+            // Check if any part of the element is visible in the container
+            if (!(elementBottom < containerTop || elementTop > containerBottom)) {
+                isVisible = true;
+                return false; // Break the loop if any element is visible
+            }
+        });
+
+        return isVisible;
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
