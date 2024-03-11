@@ -250,6 +250,11 @@ h1 {
 }
 
 @media (max-width: 1050px) {
+
+    .nav-top .menu-top li a i {
+        display: block;
+    }
+
     .kolecko {
 
         left: 37.6%;
@@ -272,9 +277,6 @@ h1 {
         padding-top: 2rem;
     }
 
-    .menu-top li a i {
-        display: block;
-    }
 
 }
 

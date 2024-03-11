@@ -235,113 +235,113 @@ h1 {
 }
 
 @media (max-width: 1050px) {
-  /* line 253, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 254, ../portfolio/studny_vysocina/scss/_header.scss */
+  .nav-top .menu-top li a i {
+    display: block;
+  }
+  /* line 258, ../portfolio/studny_vysocina/scss/_header.scss */
   .kolecko {
     left: 37.6%;
     width: 23%;
   }
-  /* line 260, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 265, ../portfolio/studny_vysocina/scss/_header.scss */
   .rest {
     left: 11.5%;
     width: 30%;
   }
-  /* line 267, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 272, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text {
     grid-template-rows: 1.7fr 1fr;
   }
-  /* line 271, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 276, ../portfolio/studny_vysocina/scss/_header.scss */
   .heading h2:first-of-type {
     padding-top: 2rem;
-  }
-  /* line 275, ../portfolio/studny_vysocina/scss/_header.scss */
-  .menu-top li a i {
-    display: block;
   }
 }
 
 @media (max-width: 900px) {
-  /* line 282, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 284, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text {
     grid-template-rows: 1.3fr 1fr;
   }
-  /* line 286, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 288, ../portfolio/studny_vysocina/scss/_header.scss */
   .widget {
     margin-top: 0rem;
   }
 }
 
 @media (max-width: 750px) {
-  /* line 292, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 294, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text {
     grid-template-rows: 1fr 1fr;
   }
 }
 
 @media (max-width: 600px) {
-  /* line 298, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 300, ../portfolio/studny_vysocina/scss/_header.scss */
   .kolecko {
     left: 29.6%;
     width: 40%;
   }
-  /* line 305, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 307, ../portfolio/studny_vysocina/scss/_header.scss */
   .rest {
     left: -14.5%;
     width: 50%;
   }
-  /* line 310, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 312, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text {
     grid-template-rows: 1.2fr 1fr;
   }
-  /* line 314, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 316, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo {
     grid-template-rows: 7fr 1fr;
   }
-  /* line 318, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 320, ../portfolio/studny_vysocina/scss/_header.scss */
   .widget {
     margin-top: 2rem;
   }
 }
 
 @media (max-width: 550px) {
-  /* line 324, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 326, ../portfolio/studny_vysocina/scss/_header.scss */
   .heading h2 {
     font-size: 1.5rem;
   }
-  /* line 328, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 330, ../portfolio/studny_vysocina/scss/_header.scss */
   .widget {
     margin-top: 0.5rem;
   }
 }
 
 @media (max-width: 450px) {
-  /* line 334, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 336, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo {
     grid-template-rows: 2.2fr 1fr;
   }
-  /* line 338, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 340, ../portfolio/studny_vysocina/scss/_header.scss */
   .heading h2:first-of-type {
     padding-top: 0rem;
   }
 }
 
 @media (max-width: 375px) {
-  /* line 344, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 346, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo {
     grid-template-rows: 2fr 1fr;
   }
-  /* line 348, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 350, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text {
     grid-template-rows: 0.9fr 1fr;
   }
-  /* line 351, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 353, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text .kolecko {
     top: 19%;
   }
-  /* line 357, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 359, ../portfolio/studny_vysocina/scss/_header.scss */
   .logo-and-text .rest {
     top: 21%;
   }
-  /* line 363, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 365, ../portfolio/studny_vysocina/scss/_header.scss */
   .widget {
     margin-top: 0rem;
   }
