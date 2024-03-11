@@ -280,8 +280,9 @@ $(document).ready(function() {
     var messages = $('.message');
     var drillImages = $('.drill-top, .drill-mid, .drill-bot');
 
-    // Initially hide all messages
-    messages.hide();
+    // Initially set the opacity of messages to 0 and color of meters
+    messages.css('opacity', 0);
+    meters.css('color', '#FABB18');
 
     $(window).scroll(function() {
         // Iterate over each meter and message pair
@@ -291,11 +292,21 @@ $(document).ready(function() {
 
             // Check if any part of the drill images is visible in the current meter
             if (areElementsVisible(drillImages, currentMeter)) {
-                // Show the corresponding message
-                currentMessage.slideDown();
+                // Change the opacity of the message to 1 when visible
+                currentMessage.stop().animate({ opacity: 1 }, 200);
+
+                // Change the color of the meter when visible
+                currentMeter.css('color', '#FABB18');
+
+                // Add text-shadow to the text within the meter when visible
+                currentMeter.find('.meter-wrap').css('text-shadow', '1px 1px 8px rgba(250,187,24,0.6)');
             } else {
-                // Hide the corresponding message if the conditions are not met
-                currentMessage.slideUp();
+                // Change the opacity of the message to 0 when not visible
+                currentMessage.stop().animate({ opacity: 0 }, 200);
+
+                // Reset the color and text-shadow of the meter when not visible
+                currentMeter.css('color', '');
+                currentMeter.find('.meter-wrap').css('text-shadow', '');
             }
         });
     });
@@ -320,6 +331,16 @@ $(document).ready(function() {
         return isVisible;
     }
 });
+
+
+
+
+
+
+
+
+
+
 
 
 
