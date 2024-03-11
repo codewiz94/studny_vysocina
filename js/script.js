@@ -266,13 +266,7 @@ $(document).ready(function () {
     lightbox.hide();
 });
 
-    
-
-
-
-
-
-
+// METER COLOR / VISIBILITY
 
 $(document).ready(function() {
     // Select all meter divs and their corresponding messages
