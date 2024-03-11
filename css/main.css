@@ -753,7 +753,7 @@ h1 {
   position: relative;
   overflow: hidden;
   max-width: 100%;
-  max-height: 50vh;
+  height: 50vh;
 }
 
 /* line 61, ../portfolio/studny_vysocina/scss/_section-3.scss */
