@@ -24,8 +24,9 @@
     li {
         place-self: center;
         padding: 0.25rem 0;
-
+        text-align: center;
     }
+
 
     li a {
         color: #fff;
@@ -271,11 +272,15 @@ h1 {
         padding-top: 2rem;
     }
 
+    .menu-top li a i {
+        display: block;
+    }
+
 }
 
 @media (max-width: 900px) {
     .logo-and-text {
-        grid-template-rows: 1.1fr 1fr;
+        grid-template-rows: 1.3fr 1fr;
     }
 
     .widget {
@@ -285,7 +290,7 @@ h1 {
 
 @media (max-width: 750px) {
     .logo-and-text {
-        grid-template-rows: 0.8fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
@@ -319,6 +324,10 @@ h1 {
     .heading h2 {
         font-size: 1.5rem;
     }
+
+    .widget {
+        margin-top: 0.5rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -333,11 +342,22 @@ h1 {
 
 @media (max-width: 375px) {
     .logo {
-        grid-template-rows: 1.7fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
 
     .logo-and-text {
         grid-template-rows: 0.9fr 1fr;
+
+        .kolecko {
+            top: 19%;
+
+    
+        }
+    
+        .rest {
+            top: 21%;
+    
+        }
     }
 
     .widget {
