@@ -8,6 +8,67 @@ $(document).ready(function() {
     const prev = $('.prev');
 
     let currentIndex = 0;
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    next.on('click', (event) => {
+        event.preventDefault();
+        currentIndex = (currentIndex + 1) % slide.children().length;
+        updateSlide();
+    });
+
+    prev.on('click', (event) => {
+        event.preventDefault();
+        currentIndex = (currentIndex - 1 + slide.children().length) % slide.children().length;
+        updateSlide();
+    });
+
+    slide.on('touchstart', touchStart);
+    slide.on('touchmove', touchMove);
+    slide.on('touchend', touchEnd);
+    slide.on('touchcancel', touchEnd);
+
+    function touchStart(event) {
+        isDragging = true;
+        startPosition = event.touches[0].clientX;
+    }
+
+    function touchMove(event) {
+        if (!isDragging) return;
+        const currentPosition = event.touches[0].clientX;
+        const translate = currentTranslate + currentPosition - startPosition;
+        slide.css('transform', 'translateX(' + translate + 'px)');
+    }
+
+    function touchEnd() {
+        isDragging = false;
+        const movedBy = currentTranslate - prevTranslate;
+        if (movedBy < -100 && currentIndex !== slide.children().length - 1) {
+            currentIndex += 1;
+        } else if (movedBy > 100 && currentIndex !== 0) {
+            currentIndex -= 1;
+        }
+        updateSlide();
+    }
+
+    function updateSlide() {
+        currentTranslate = -currentIndex * (100 / slide.children().length);
+        slide.css('transform', 'translateX(' + currentTranslate + '%)');
+        prevTranslate = currentTranslate;
+    }
+});
+
+
+/* SLIDER POVODNY
+
+$(document).ready(function() {
+    const slide = $('.slide');
+    const next = $('.next');
+    const prev = $('.prev');
+
+    let currentIndex = 0;
 
     next.on('click', (event) => {
         event.preventDefault();
@@ -30,6 +91,7 @@ $(document).ready(function() {
 
 
 });
+*/
 
 // DRILL ROTATION
 
