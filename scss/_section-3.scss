@@ -44,6 +44,7 @@
         &:active {
             transform: scale(1.05);
             border-color: $color-highlight;
+            transition-duration: 300ms;
         }
     }
 }
