@@ -12,12 +12,11 @@
 }
 
 .parallax-image {
-    /* Add styles for your images here */
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 0;
-    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
+    transition: transform 0.3s ease-out;
 }
 
 .clouds {
@@ -96,7 +95,7 @@
 
 }
 
-
+// MEDIA QUERIES
 
 @media (max-width: 1100px) {
     .grass-transition {

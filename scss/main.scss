@@ -55,13 +55,6 @@ h6 {
 
 // GENERAL SETTINGS
 
-// TBDel colors
-
-
-
-body {
-    background-color: aqua;
-}
 
 main {
     width: 100%;
@@ -74,9 +67,6 @@ main {
 }
 
 aside {
-    /*
-    background-color: red;
-    */
     padding-left: 0.5rem;
 }
 
@@ -87,7 +77,6 @@ aside {
     width: 100%;
     background-color: #C44129;
     color: $color-neutral-lt;
-    //color: $color-highlight;
     border-top: 2px solid $color-neutral-lt;
     border-bottom: 2px solid $color-neutral-lt;
     font-size: 1rem;
@@ -103,7 +92,7 @@ aside {
     font-weight: 700;
     letter-spacing: 2px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    //text-shadow: 4px 4px 21px rgba(250,187,24,1);
+
 }
 
 
@@ -154,5 +143,5 @@ html {
 }
 
 
-//
+
 
