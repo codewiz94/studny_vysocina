@@ -1,4 +1,21 @@
+// COLORS
+
 $color-highlight: #FABB18;
 $color-highlight2: #008BAB;
 $color-neutral-lt: #F5F5F5;
 $color-neutral-dk: rgba(88, 88, 90, 1);
+
+//FONT SIZES---------
+
+//SETTINGS
+
+// MB MIN 320px
+// PC MAX 1300px
+
+$fs-sm: clamp(0.8rem, calc(-0.08vi + 0.82rem), 0.75rem);
+$fs-base: clamp(1rem, calc(0vi + 1rem), 1rem);
+$fs-md: clamp(1.25rem, calc(0.14vi + 1.22rem), 1.33rem);
+$fs-lg: clamp(1.56rem, calc(0.35vi + 1.49rem), 1.78rem);
+$fs-xl: clamp(1.95rem, calc(0.68vi + 1.82rem), 2.37rem);
+$fs-xxl: clamp(2.44rem, calc(1.17vi + 2.21rem), 3.16rem);
+$fs-xxxl: clamp(3.05rem, calc(1.89vi + 2.67rem), 4.21rem);
