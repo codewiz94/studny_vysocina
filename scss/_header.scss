@@ -44,63 +44,47 @@
 
 .title {
     background: $color-neutral-lt;
-
     height: 100vh;
-    
-
     display: grid;
     grid-template-rows: 80vh 20vh;
-    
 }
 
 .logo-and-text {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
-
-.logo {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    
-}
-
-
 
 .logo img {
     overflow: hidden;
 }
 
+
 .logo-img-wrap {
-    position: relative;
     container-type: size;
+    position: relative;
 }
 
 .kolecko {
     position: absolute;
     z-index: 1;
-    width: 80cqh;
-    left: 29%;
-    top: 20%;
+    max-width: 50cqw;
 }
 .rest {
     position: absolute;
     z-index: 2;
-    width: 100cqh;
-    top: 15%;
-    left: 24%;
+    max-width: 65cqw;
 }
 
 h1 {
     position: absolute;
-    left: 24%;
-    bottom: 0;
-    font-size: clamp(2rem, 3vw, 4rem);
+    top: 0;
+    font-size: $fs-xxl;
+    z-index: 3;
     font-weight: 700;
     color: $color-highlight2;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    text-align: center;
 }
+
 
 
 
@@ -123,20 +107,14 @@ h1 {
 // HEADING 
 
 .heading {
+
     display: grid;
     place-self: center;
-    text-align: center;
-    padding: 0 1rem;
-
-    h2:first-of-type {
-        text-align: center;
-    }
 
     h2 {
-        padding: 1rem 0;
-        padding-right: 1rem;
-        font-size: clamp(1.8rem, 2vw, 3rem);
         color: $color-highlight2;
+        text-align: center;
+        padding: 1rem;
         
         strong {
             color: $color-highlight;
