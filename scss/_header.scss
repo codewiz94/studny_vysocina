@@ -45,44 +45,54 @@
 .title {
     background: $color-neutral-lt;
 
-
+    height: 100vh;
     
 
     display: grid;
-    grid-template-rows: 10fr 3fr;
+    grid-template-rows: 80vh 20vh;
     
 }
 
 .logo-and-text {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    height: 80vh;
+    column-gap: 1rem;
 }
 
 .logo {
-    max-height: 100%;
-    position: relative;
     display: grid;
     grid-template-rows: 2fr 1fr;
     
 }
 
 .logo img {
-    position: relative;
     overflow: hidden;
 }
 
+.logo-img-wrap {
+    position: relative;
+    container-type: size;
+}
+
 .kolecko {
-    top: 15%;
-    left: 30.6%;
+    position: absolute;
     z-index: 1;
-    width: 35%;
-    height: auto;
+    width: 80cqh;
+    left: 29%;
+    top: 20%;
+}
+.rest {
+    position: absolute;
+    z-index: 2;
+    width: 100cqh;
+    top: 15%;
+    left: 24%;
 }
 
 h1 {
 
-    padding: 0 1rem;
+    padding: 2rem 0;
+    padding-left: clamp(1rem, calc(0.0204rem + 4.8980vw), 4rem);;
     font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 700;
     color: $color-highlight2;
@@ -92,13 +102,6 @@ h1 {
 
 
 
-.rest {
-    top: 17%;
-    left: -11%;
-    z-index: 2;
-    width: 50%;
-    height: auto;
-}
 
 
 .logo .kolecko {
@@ -118,16 +121,18 @@ h1 {
 // HEADING 
 
 .heading {
+    display: grid;
+    place-self: center;
     text-align: center;
     padding: 0 1rem;
 
     h2:first-of-type {
-        padding-top: 8rem;
         text-align: center;
     }
 
     h2 {
-        padding-right: 4rem;
+        padding: 1rem 0;
+        padding-right: 1rem;
         font-size: clamp(1.8rem, 2vw, 3rem);
         color: $color-highlight2;
         
