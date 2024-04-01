@@ -65,6 +65,8 @@
     
 }
 
+
+
 .logo img {
     overflow: hidden;
 }
@@ -90,9 +92,9 @@
 }
 
 h1 {
-
-    padding: 2rem 0;
-    padding-left: clamp(1rem, calc(0.0204rem + 4.8980vw), 4rem);;
+    position: absolute;
+    left: 24%;
+    bottom: 0;
     font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 700;
     color: $color-highlight2;
@@ -175,3 +177,29 @@ h1 {
 
 
 
+@media (max-width: 1300px) {
+    .logo-and-text {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .kolecko {
+        left: 25%;
+        top: 20%;
+    }
+    .rest {
+        top: 15%;
+        left: 20%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .kolecko {
+        left: 15%;
+        top: 20%;
+    }
+    .rest {
+        top: 15%;
+        left: 10%;
+    }
+}
