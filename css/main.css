@@ -183,11 +183,7 @@ h1 {
   h1 {
     font-size: clamp(1.95rem, calc(0.68vi + 1.82rem), 2.37rem);
   }
-  /* line 198, ../portfolio/studny_vysocina/scss/_header.scss */
-  .menu-top {
-    padding-top: 0.25rem;
-  }
-  /* line 202, ../portfolio/studny_vysocina/scss/_header.scss */
+  /* line 199, ../portfolio/studny_vysocina/scss/_header.scss */
   .menu-top li a i {
     display: block;
   }
