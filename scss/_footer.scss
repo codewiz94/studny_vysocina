@@ -44,20 +44,15 @@ footer {
 
 
 .credits {
-    width: 100%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: #008BAA;
-}
-
-.wiz {
-    margin: 0;
+    background-color: $color-highlight2;
     color: $color-neutral-lt;
+    text-align: center;
+    font-size: $fs-sm;
+    padding: 0.5rem 0;
 
     a {
-        text-decoration: none;
         color: $color-neutral-lt;
+        padding-left: 0.25rem;
     }
 }
 

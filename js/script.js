@@ -1,35 +1,25 @@
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
 (function($){
 
 // SLIDER
 
-$(document).ready(function() {
-    const slide = $('.slide');
-    const next = $('.next');
-    const prev = $('.prev');
-
-    let currentIndex = 0;
-
-    next.on('click', (event) => {
-        event.preventDefault();
-        currentIndex = (currentIndex + 1) % slide.children().length;
-        updateSlide();
-    });
-
-    prev.on('click', (event) => {
-        event.preventDefault();
-        currentIndex = (currentIndex - 1 + slide.children().length) % slide.children().length;
-        updateSlide();
-
-        
-    });
-
-    function updateSlide() {
-        const translateValue = -currentIndex * (100 / slide.children().length) + '%';
-        slide.css('transform', 'translateX(' + translateValue + ')');
-    }
-
-
-});
 
 
 // DRILL ROTATION

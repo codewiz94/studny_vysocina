@@ -546,82 +546,64 @@ h1 {
   transition-duration: 300ms;
 }
 
-/* line 54, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.slider {
+/* line 53, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 .slider {
+  display: none;
   position: relative;
-  overflow: hidden;
-  max-width: 100%;
-  height: 50vh;
+}
+
+/* line 58, ../portfolio/studny_vysocina/scss/_section-3.scss */
+.section-3 .slider button {
+  display: none;
 }
 
 /* line 62, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.slide {
-  display: flex;
-  width: 1200%;
-  /* 12 images = 1200% / 1 image 100% */
-  height: 50vh;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* line 70, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.slide img {
-  width: 100%;
-  height: auto;
-  height: auto;
+.mySlides {
+  display: none;
+  border-radius: 15px;
   border: 3px solid #F5F5F5;
-  border-radius: 10px;
-}
-
-/* line 78, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.buttons {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 86, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.buttons a {
-  padding: 0.5rem;
-  background-color: #F5F5F5;
-  color: #58585a;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: clamp(1.25rem, 2vw, 2rem);
-  cursor: pointer;
-}
-
-/* line 97, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.prev {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-/* line 102, ../portfolio/studny_vysocina/scss/_section-3.scss */
-.next {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
 
 @media (max-width: 800px) {
-  /* line 110, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  /* line 71, ../portfolio/studny_vysocina/scss/_section-3.scss */
   .galery {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 450px) {
-  /* line 116, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  /* line 77, ../portfolio/studny_vysocina/scss/_section-3.scss */
   .section-3 .galery {
     display: none;
   }
 }
 
-@media (min-width: 450px) {
-  /* line 122, ../portfolio/studny_vysocina/scss/_section-3.scss */
+@media (max-width: 450px) {
+  /* line 83, ../portfolio/studny_vysocina/scss/_section-3.scss */
   .section-3 .slider {
-    display: none;
+    display: block;
+  }
+  /* line 87, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .section-3 .slider button {
+    display: block;
+    position: absolute;
+    top: 47%;
+    background-color: #F5F5F5;
+    border: 0;
+    padding: 0.5rem;
+    font-size: clamp(1.56rem, calc(0.35vi + 1.49rem), 1.78rem);
+    cursor: pointer;
+  }
+  /* line 99, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .slide-prev {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  /* line 104, ../portfolio/studny_vysocina/scss/_section-3.scss */
+  .slide-next {
+    right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
@@ -959,27 +941,21 @@ footer {
 
 /* line 46, ../portfolio/studny_vysocina/scss/_footer.scss */
 .credits {
-  width: 100%;
+  background-color: #008BAB;
+  color: #F5F5F5;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  background-color: #008BAA;
+  font-size: clamp(0.8rem, calc(-0.08vi + 0.82rem), 0.75rem);
+  padding: 0.5rem 0;
 }
 
-/* line 54, ../portfolio/studny_vysocina/scss/_footer.scss */
-.wiz {
-  margin: 0;
+/* line 53, ../portfolio/studny_vysocina/scss/_footer.scss */
+.credits a {
   color: #F5F5F5;
-}
-
-/* line 58, ../portfolio/studny_vysocina/scss/_footer.scss */
-.wiz a {
-  text-decoration: none;
-  color: #F5F5F5;
+  padding-left: 0.25rem;
 }
 
 @media (max-width: 900px) {
-  /* line 68, ../portfolio/studny_vysocina/scss/_footer.scss */
+  /* line 63, ../portfolio/studny_vysocina/scss/_footer.scss */
   .bottom-menu {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
@@ -987,7 +963,7 @@ footer {
 }
 
 @media (max-width: 500px) {
-  /* line 75, ../portfolio/studny_vysocina/scss/_footer.scss */
+  /* line 70, ../portfolio/studny_vysocina/scss/_footer.scss */
   .bottom-menu {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
