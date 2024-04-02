@@ -160,4 +160,46 @@ h1 {
 
 // MEDIA QUERIES
 
+@media (max-width: 1300px) {
+    .logo-and-text {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(2, 1fr);
+    }
 
+    .kolecko {
+
+        max-width: 48cqh;
+    }
+    .rest {
+
+        max-width: 65cqh;
+    }
+
+    h1 {
+        bottom: 0%;
+
+    }
+
+    .heading h2 {
+        font-size: $fs-lg;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading h2 {
+        font-size: $fs-md;
+    }
+
+    h1 {
+        font-size: $fs-xl;
+
+    }
+
+    .menu-top {
+        padding-top: 0.25rem;
+    }
+
+    .menu-top li a i {
+        display: block;
+    }
+}
