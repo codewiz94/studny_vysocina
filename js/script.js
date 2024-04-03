@@ -1,3 +1,5 @@
+// SLIDER
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -18,7 +20,7 @@ function showDivs(n) {
 
 (function($){
 
-// SLIDER
+
 
 
 
